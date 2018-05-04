@@ -1,0 +1,58 @@
+Installation Training - Luszol’s Solar Battery 1000, 3000 & 5000
+
+1. What energy sources can the Solarbattery utilize to charge up batteries?
+
+	Solar
+	Diesel/Natural Gas Generators
+	The Grid
+	All Energy Sources Mentioned ++
+
+2. How would you install a Solarbattery?
+
+	Set Up Roof Attachments > Install Solar Panels > Connect Solar Panels > Power On > Connect Auxiliary Power Sources > Connect Appliances to use++
+
+Power On > Connect Appliances to use > Connect Auxiliary Power Sources>Set Up Roof Attachments > Install Solar Panels > Connect Solar Panels > 
+
+ Connect Appliances to use > Connect Auxiliary Power Sources > Power On > Set Up Roof Attachments > Install Solar Panels > Connect Solar Panels
+
+Connect Solar Panels >  Connect Auxiliary Power Sources > Install Solar Panels > Set Up Roof Attachments  > Power On > Connect Appliances to use
+
+3. What type of battery do Solarbatteries utilize?
+	
+	Lithium
+	AGM (Lead Acid)++
+	Fuel Cells
+	Alkaline
+
+4. What is the recommended use for a SolarBattery 1000?
+	
+	Whole House Energy Load
+	Lighting, Fans & TV, Fridge, A/C, etc…
+	Lighting, Fans & TV, Fridge
+	Lighting, Fans & TV++
+
+5.What is the recommended use for a SolarBattery 3000?
+	
+	Whole House Energy Load
+	Lighting, Fans & TV, Fridge, A/C, etc…
+	Lighting, Fans & TV, Fridge++
+	Lighting, Fans & TV
+
+6.What is the recommended use for a SolarBattery 5000?
+	
+	Whole House Energy Load
+	Lighting, Fans & TV, Fridge, A/C, etc…++
+	Lighting, Fans & TV, Fridge
+	Lighting, Fans & TV++
+
+7. How long can Solarbatteries sustain their recommended usage without sunlight power from PV?
+	
+	Forever
+	A couple hours
+	Refer back to spec sheet, but generally based on included structures, about 8 hours if no other auxiliary source is provided++
+	6 Hours
+
+8. Solarbatteries are easy to install, remove and replace by anyone with a little experience with electricity, thus they can be considered deployable and thus sent to regions in need of them.
+
+	True++
+	False 
