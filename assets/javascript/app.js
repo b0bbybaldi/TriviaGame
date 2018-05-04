@@ -1,6 +1,4 @@
 
-// Variables
-  
 var questions = [
   { q: "What energy sources can the Solarbattery utilize to charge up batteries?", o1: "Solar", o2: "Diesel/Natural Gas Generators", o3: "The Grid", a:"All Energy Sources Mentioned"},
   { q: "How would you install a Solarbattery?", a: "Set Up Roof Attachments > Install Solar Panels > Connect Solar Panels > Power On > Connect Auxiliary Power Sources > Connect Appliances to use++", o1:"Power On > Connect Appliances to use > Connect Auxiliary Power Sources>Set Up Roof Attachments > Install Solar Panels > Connect Solar Panels", o2: "Connect Appliances to use > Connect Auxiliary Power Sources > Power On > Set Up Roof Attachments > Install Solar Panels > Connect Solar Panels", o3: "Connect Solar Panels >  Connect Auxiliary Power Sources > Install Solar Panels > Set Up Roof Attachments  > Power On > Connect Appliances to use"},
@@ -16,63 +14,94 @@ var wins = 0;
 var losses = 0;
 var index = 0;
 
-// Functions
-
-function nextQ() {
-
-  if (index <= (questions.length - 1)) {
-    $('#question').html('<div>' + questions[index].q + '</div>');
-    $('#choices').html('<div>' + questions[index].o1 + '</div>');
-    $('#choices').html('<div>' + questions[index].o2 + '</div>');
-    $('#choices').html('<div>' + questions[index].o3 + '</div>');
-    $('#choices').html('<div>' + questions[index].a + '</div>');
-  }
-  else {
-    $('#question').html('<div>' + 'Game Over!' + '</div>');
-    $('#wins').html('<div>'+ 'You answered correctly: ' + wins + '</div>');
-    $('#losses').html('<div>' + 'You missed: ' + losses + '</div>');
-  }
-}
-
-function score() {
-  $('#wins').html('<div>' + 'Wins: ' + wins + '</div>');
-  $('#losses').html('<div>' + 'Losses: ' + losses + '</div>');
-}
-
-//Add Counter/Timer and Display
-
-nextQ();
-score();
-
 $(document).ready(function(){
-
-$("#start").click(function(){
-var intervalId = 30;
-var timer = setInterval(function(){
-  intervalId--
-  $('#display').text(timer)
-  if(intervalId === 0){
-    clearInterval(timer);
-  }
-},1000);
-}
 
   if (index === index) {
     return;
   }
 
-  $('#choices').click(function(){
-      //Check for clicks in the answer section
-
-    if(questions.a){
-      //If the click was on the button with the right answer for the given question then add to wins, update score 
-    }else{
-      //If click was on a button with an incorrect answer then add to losses and update score
-    }
-
-      //Incremenet question index
-      //Render next question
+  $("#start").click(function(){
+    $(this).hide();
+      game();
   })
-}
+
+  $("#startOver").click(function(){
+    $(this).hide();
+      game();
+  })
+
+  var game = function(){
+    var wins = 0;
+    var losses = 0;
+    var index = 0;
+    nextQ();
+  }
+
+  var nextQ = function(){
+    $('#question').empty();
+    $('#choice1').empty();
+    $('#choice2').empty();
+    $('#choice3').empty();
+    $('#choice4').empty();
+    $('#wins').empty();
+    $('#losses').empty();
+
+    if (index <= (questions.length - 1)) {
+      $('#question').append(questions[index].q);
+      $('#choice1').append(questions[index].o1);
+      $('#choice2').append(questions[index].o2);
+      $('#choice3').append(questions[index].o3);
+      $('#choice4').append(questions[index].a);
+      $('.choices').click(function(){
+        userChoice = $(this);
+        score()
+      })
+    }else{
+      $('#display').empty();
+      $('.choice').empty();
+      $('#question').append('Game Over!');
+      $('#wins').append('You answered correctly: ' + wins);
+      $('#losses').append('You missed: ' + losses);
+      $('#startOverBtn').show();
+    }
+  }
+
+  var timer = function(){
+    var interval = 30;
+    var timer = setInterval(function(){
+      interval--
+      $('#display').text(timer)
+      if(interval === 0){
+        clearInterval(timer);
+      }
+    },1000);
+    nextQ();
+    score();
+  }
+
+
+  var score = function(){
+    timer();
+
+    $('#question').empty();
+    $('#choice1').empty();
+    $('#choice2').empty();
+    $('#choice3').empty();
+    $('#choice4').empty();
+
+    if(userChoice === questions[index].a){
+      wins++ 
+      alert('Correct!')
+      nextQ()
+    }else{
+      losses++
+      alert('Wrong!')
+      nextQ()
+    }
+  }
+
+})
+
+
 
  
