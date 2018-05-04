@@ -3,31 +3,37 @@
 	<head>
 		<meta charset='UTF-8'>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>   </title>
-
+		<title>Luszol Training Trivia</title>
 		<link rel='stylesheet' type='text/css' href='assets/css/style.css'>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-
 		<link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Chivo" rel="stylesheet">
 		
 	</head>
 
 	<body>
 		<div id=container>
+			<button class id='start'>Start</button>
+			<button class id='wins'>Wins</button>
+			<button class id='losses'>Losses</button>
 
 			<div class="jumbotron">
 			  <h1 class="display-4" id=game> </h1>
 			  <hr class="my-4">
-			  <p id="instructions">    </p>
+			  <p id="display"></p>
 			</div>
 
 			<div class="card">
-				<div class="card-header" id=q1>	
+				<div class="card-header" id='question'>	
 				</div>
 				<div class="card-body">
-					<h5 class="card-title"><span id=choices1>  </span></h5>
+					<p class="card-title" class="choices"><span id='choice1'>  </span></p>
+					<p class="card-title" class="choices"><span id='choice2'>  </span></p>
+					<p class="card-title" class="choices"><span id='choice3'>  </span></p>
+					<p class="card-title" class="choices"><span id='choice4'>  </span></p>
 				</div>
 			</div>
+
+			<button class id='startOver'>Start Over</button>
 
 		</div>
 
