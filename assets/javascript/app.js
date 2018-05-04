@@ -1,3 +1,4 @@
+
 // Variables
   
 var questions = [
@@ -20,25 +21,41 @@ var index = 0;
 function nextQ() {
 
   if (index <= (questions.length - 1)) {
-    $('#question').append(questions[index].q);
-    $('#choices').append()//Create Buttons
+    $('#question').html('<div>' + questions[index].q + '</div>');
+    $('#choices').html('<div>' + questions[index].o1 + '</div>');
+    $('#choices').html('<div>' + questions[index].o2 + '</div>');
+    $('#choices').html('<div>' + questions[index].o3 + '</div>');
+    $('#choices').html('<div>' + questions[index].a + '</div>');
   }
   else {
-    $('#question').append('<div>' + 'Game Over!' + '</div>');
-    $('#wins').append('You answered correctly: ' + wins);
-    $('#losses').append('You missed: ' + losses);
+    $('#question').html('<div>' + 'Game Over!' + '</div>');
+    $('#wins').html('<div>'+ 'You answered correctly: ' + wins + '</div>');
+    $('#losses').html('<div>' + 'You missed: ' + losses + '</div>');
   }
 }
 
 function score() {
-  $('#wins').append('Wins: ' + wins);
-  $('#losses').append('Losses: ' + losses);
+  $('#wins').html('<div>' + 'Wins: ' + wins + '</div>');
+  $('#losses').html('<div>' + 'Losses: ' + losses + '</div>');
 }
+
+//Add Counter/Timer and Display
 
 nextQ();
 score();
 
 $(document).ready(function(){
+
+$("#start").click(function(){
+var intervalId = 30;
+var timer = setInterval(function(){
+  intervalId--
+  $('#display').text(timer)
+  if(intervalId === 0){
+    clearInterval(timer);
+  }
+},1000);
+}
 
   if (index === index) {
     return;
