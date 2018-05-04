@@ -62,7 +62,7 @@ $(document).ready(function(){
       $('#question').append('Game Over!');
       $('#wins').append('You answered correctly: ' + wins);
       $('#losses').append('You missed: ' + losses);
-      $('#startOverBtn').show();
+      $('#startOver').show();
     }
   }
 
