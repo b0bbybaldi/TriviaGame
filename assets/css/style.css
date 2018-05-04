@@ -1,0 +1,51 @@
+.jumbotron{
+	text-align: justify;
+	font-size: 14px;
+	font-family: 'Chivo', sans-serif;
+	padding-left: 30px;
+}
+
+.display-4{
+	font-weight: bold;
+	text-align: center;
+	font-size: 32px;
+	font-family: 'Black Ops One', cursive;
+}
+
+#container {
+	background: url('../images/background.jpg');
+	height: 1300px;
+}
+
+.card{
+	margin-left: 60px;
+	margin-right: 600px;
+	margin-bottom: 20px;
+	float: middle;
+}
+
+.card-header{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.card-title{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.card-text{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#q1 #q2 #q3 #q4 #q5 #q6 #q7 #q8{
+	font-weight: bold;
+}
+
+#choices1 #choices2 #choices3 #choices4 #choices5 #choices6 #choices7 #choices8{
+	font-weight: bold;
+}
+
+
+
