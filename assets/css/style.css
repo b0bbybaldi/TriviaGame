@@ -39,12 +39,36 @@
 	font-weight: bold;
 }
 
-#q1 #q2 #q3 #q4 #q5 #q6 #q7 #q8{
+#question {
 	font-weight: bold;
 }
 
-#choices1 #choices2 #choices3 #choices4 #choices5 #choices6 #choices7 #choices8{
+#choice1 #choice2 #choice3 #choice4{
 	font-weight: bold;
+}
+
+#start{
+
+}
+
+#startOver{
+
+}
+
+#wins{
+
+}
+
+#losses{
+
+}
+
+.choices{
+
+}
+
+#display{
+	
 }
 
 
