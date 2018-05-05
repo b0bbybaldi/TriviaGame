@@ -1,16 +1,18 @@
 
 var questions = [
-  { q: "What energy sources can the Solarbattery utilize to charge up batteries?", choices:["Solar","Diesel/Natural Gas Generators", "The Grid", "All Energy Sources Mentioned"], answer: 3},
-  { q: "How would you install a Solarbattery?", choices: ["Set Up Roof Attachments > Install Solar Panels > Connect Solar Panels > Power On > Connect Auxiliary Power Sources > Connect Appliances to use++", "Power On > Connect Appliances to use > Connect Auxiliary Power Sources>Set Up Roof Attachments > Install Solar Panels > Connect Solar Panels", "Connect Appliances to use > Connect Auxiliary Power Sources > Power On > Set Up Roof Attachments > Install Solar Panels > Connect Solar Panels", "Connect Solar Panels >  Connect Auxiliary Power Sources > Install Solar Panels > Set Up Roof Attachments  > Power On > Connect Appliances to use"], answer: 0},
-  { q: "What type of battery do Solarbatteries utilize?", choices: ["Lithium", "AGM (Lead Acid)", "Fuel Cells", "Alkaline"], answer: 1},
-  { q: "What is the recommended use for a SolarBattery 1000?", choices: ["Whole House Energy Load", "Lighting, Fans & TV, Fridge, A/C, etc…", "Lighting, Fans & TV, Fridge", "Lighting, Fans & TV"], answer: 3},
-  { q: "What is the recommended use for a SolarBattery 3000?", choices: ["Whole House Energy Load", "Lighting, Fans & TV, Fridge, A/C, etc…", "Lighting, Fans & TV, Fridge", "Lighting, Fans & TV"], answer: 2},
-  { q: "What is the recommended use for a SolarBattery 5000?", choices: ["Whole House Energy Load", "Lighting, Fans & TV, Fridge, A/C, etc…", "Lighting, Fans & TV, Fridge", "Lighting, Fans & TV"], answer: 1},
-  { q: "How long can Solarbatteries sustain their recommended usage without sunlight power from PV?", choices: ["Forever", "A couple hours", "Refer back to spec sheet, but generally based on included structures, about 8 hours if no other auxiliary source is provided", "6 Hours"], answer: 2},
-  { q: "Solarbatteries are easy to install, remove and replace by anyone with a little experience with electricity, thus they can be considered deployable and thus sent to regions in need of them.", choices: ["True", "False"], answer: 0},
+  { q: "The lowest possible temperature that an object can have.", choices: ["Thermodynamics", "Absolute zero", "Internal energy", "First law of thermodynamics", "Adiabatic process", "Temperature inversion", "Second law of thermodynamics", "Heat engine", "Entropy"], answer: 1},
+  { q: "The heat added to a system = increase in the system's internal energy + external work done on the environment.", choices: ["Thermodynamics", "Absolute zero", "Internal energy", "First law of thermodynamics", "Adiabatic process", "Temperature inversion", "Second law of thermodynamics", "Heat engine", "Entropy"], answer: 3},
+  { q: "Total energy of a material, including kinetic and potential energies of the molecules within the material.", choices: ["Thermodynamics", "Absolute zero", "Internal energy", "First law of thermodynamics", "Adiabatic process", "Temperature inversion", "Second law of thermodynamics", "Heat engine", "Entropy"], answer: 2},
+  { q: "The study of heat.", choices: ["Thermodynamics", "Absolute zero", "Internal energy", "First law of thermodynamics", "Adiabatic process", "Temperature inversion", "Second law of thermodynamics", "Heat engine", "Entropy"], answer: 0},
+  { q: "The upper atmosphere becomes warmer than regions below it.", choices: ["Thermodynamics", "Absolute zero", "Internal energy", "First law of thermodynamics", "Adiabatic process", "Temperature inversion", "Second law of thermodynamics", "Heat engine", "Entropy"], answer: 5},
+  { q: "A process in which no heat leves or enters the system.", choices: ["Thermodynamics", "Absolute zero", "Internal energy", "First law of thermodynamics", "Adiabatic process", "Temperature inversion", "Second law of thermodynamics", "Heat engine", "Entropy"], answer: 4},
+  { q: "Represents the amount of disorder in a system.", choices: ["Thermodynamics", "Absolute zero", "Internal energy", "First law of thermodynamics", "Adiabatic process", "Temperature inversion", "Second law of thermodynamics", "Heat engine", "Entropy"], answer: 8},
+  { q: "A machine that converts heat input into work output.", choices: ["Thermodynamics", "Absolute zero", "Internal energy", "First law of thermodynamics", "Adiabatic process", "Temperature inversion", "Second law of thermodynamics", "Heat engine", "Entropy"], answer: 7},
+  { q: "All systems tend to become more disordered with time. The amount of usable energy decreases with time and continuing operation of the system.", choices: ["Thermodynamics", "Absolute zero", "Internal energy", "First law of thermodynamics", "Adiabatic process", "Temperature inversion", "Second law of thermodynamics", "Heat engine", "Entropy"], answer: 6}
 ];
 
-var imageArray = ["data.png", "efficiency.png", "microgrid.png", "oneline.png", "sb1000.png", "sb3000.png", "sb5000.png", "uses.png"];
+
+var imageArray = ["absolute.jpg", "engine.jpg", "entropy.jpg", "first.jpg", "internal.jpg", "inversion.jpg", "laws.png", "piston.jpg", "second.jpg", "thermo.jpg"];
 
 var current;
 var none;

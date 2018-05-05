@@ -1,11 +1,11 @@
 The lowest possible temperature that an object can have.
 
 Thermodynamics
-Absolute zero
+Absolute zero ++ 1
 Internal energy
 First law of thermodynamics
 Adiabatic process
-Temperture inversion
+Temperature inversion
 Second law of thermodynamics
 Heat engine
 Entropy
@@ -16,9 +16,9 @@ The heat added to a system = increase in the system's internal energy + external
 Thermodynamics
 Absolute zero
 Internal energy
-First law of thermodynamics
+First law of thermodynamics ++ 3
 Adiabatic process
-Temperture inversion
+Temperature inversion
 Second law of thermodynamics
 Heat engine
 Entropy
@@ -28,10 +28,10 @@ Total energy of a material, including kinetic and potential energies of the mole
 
 Thermodynamics
 Absolute zero
-Internal energy
+Internal energy ++ 2
 First law of thermodynamics
 Adiabatic process
-Temperture inversion
+Temperature inversion
 Second law of thermodynamics
 Heat engine
 Entropy
@@ -39,12 +39,12 @@ Entropy
 
 The study of heat.
 
-Thermodynamics
+Thermodynamics ++ 0
 Absolute zero
 Internal energy
 First law of thermodynamics
 Adiabatic process
-Temperture inversion
+Temperature inversion 
 Second law of thermodynamics
 Heat engine
 Entropy
@@ -57,7 +57,7 @@ Absolute zero
 Internal energy
 First law of thermodynamics
 Adiabatic process
-Temperture inversion
+Temperature inversion ++ 5
 Second law of thermodynamics
 Heat engine
 Entropy
@@ -69,8 +69,8 @@ Thermodynamics
 Absolute zero
 Internal energy
 First law of thermodynamics
-Adiabatic process
-Temperture inversion
+Adiabatic process ++ 4
+Temperature inversion
 Second law of thermodynamics
 Heat engine
 Entropy
@@ -83,10 +83,10 @@ Absolute zero
 Internal energy
 First law of thermodynamics
 Adiabatic process
-Temperture inversion
+Temperature inversion
 Second law of thermodynamics
 Heat engine
-Entropy
+Entropy ++ 8
 
 
 A machine that converts heat input into work output.
@@ -96,9 +96,9 @@ Absolute zero
 Internal energy
 First law of thermodynamics
 Adiabatic process
-Temperture inversion
+Temperature inversion
 Second law of thermodynamics
-Heat engine
+Heat engine ++ 7
 Entropy
 
 
@@ -109,7 +109,7 @@ Absolute zero
 Internal energy
 First law of thermodynamics
 Adiabatic process
-Temperture inversion
-Second law of thermodynamics
+Temperature inversion
+Second law of thermodynamics ++ 6
 Heat engine
 Entropy
