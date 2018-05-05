@@ -4,6 +4,11 @@ font-family: 'Armata', sans-serif;
 font-family: 'Sigmar One', cursive;
 font-family: 'Julius Sans One', sans-serif;*/
 
+body{	
+	background: url('../images/background.jpg');
+	height: 960px;
+}
+
 .jumbotron{
 	padding-left: 30px;
 	height: 200px;
@@ -25,18 +30,25 @@ font-family: 'Julius Sans One', sans-serif;*/
 }
 
 #container {
-	background: url('../images/background.jpg');
-	height: 960px;
+	width: 80%;
+	height: 60%;
+	float: middle;
+	margin-left: 70px;
 }
 
 #start{
 	font-weight: bold;
 	text-align: center;
-	font-size: 24px;
+	font-size: 72px;
 	font-family: 'Audiowide', cursive;	
-	padding: 100px;
+	padding: 75px;
 	float: middle;
-	margin-left: 300px;
+	margin-left: 450px;
+	margin-top: 25px;
+}
+
+#start:click{
+	padding: 25px;
 }
 
 #timeToGo{

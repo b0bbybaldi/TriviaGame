@@ -33,6 +33,9 @@ var message = {
 
 $(document).ready(function(){
 
+  $('#current').hide();
+  $('#timeToGo').hide();
+
   $("#start").click(function(){
     $(this).hide();
     $("#corrected").empty();
@@ -69,7 +72,9 @@ $(document).ready(function(){
     $("#incorrect").empty();
 
     answered = true;
-
+    
+    $('#current').show();
+    $('#timeToGo').show();
     $('#current').html((current + 1) + "/" + questions.length);
     $('.question').html('<h2>' + questions[current].q + '</h2>');
 
@@ -111,6 +116,10 @@ $(document).ready(function(){
     $('.chosen').empty();
     $('.question').empty();
 
+    $('#current').hide();
+
+    $('#timeToGo').hide();
+
     var correctChoiceIndex = questions[current].answer;
 
     var correctChoice = questions[current].choices[correctChoiceIndex];
@@ -145,6 +154,10 @@ $(document).ready(function(){
     $('#message').empty();
     $('#corrected').empty();
     $('#pics').empty();
+
+    $('#current').hide();
+
+    $('#timeToGo').hide();
 
     $('#final').html(message.final)
     $('#correct').html('Answered Correcly: ' + wins);
