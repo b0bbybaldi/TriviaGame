@@ -1,58 +1,115 @@
-Installation Training - Luszol’s Solar Battery 1000, 3000 & 5000
+The lowest possible temperature that an object can have.
 
-1. What energy sources can the Solarbattery utilize to charge up batteries?
+Thermodynamics
+Absolute zero
+Internal energy
+First law of thermodynamics
+Adiabatic process
+Temperture inversion
+Second law of thermodynamics
+Heat engine
+Entropy
 
-	Solar
-	Diesel/Natural Gas Generators
-	The Grid
-	All Energy Sources Mentioned ++
 
-2. How would you install a Solarbattery?
+The heat added to a system = increase in the system's internal energy + external work done on the environment.
 
-	Set Up Roof Attachments > Install Solar Panels > Connect Solar Panels > Power On > Connect Auxiliary Power Sources > Connect Appliances to use++
+Thermodynamics
+Absolute zero
+Internal energy
+First law of thermodynamics
+Adiabatic process
+Temperture inversion
+Second law of thermodynamics
+Heat engine
+Entropy
 
-Power On > Connect Appliances to use > Connect Auxiliary Power Sources>Set Up Roof Attachments > Install Solar Panels > Connect Solar Panels > 
 
- Connect Appliances to use > Connect Auxiliary Power Sources > Power On > Set Up Roof Attachments > Install Solar Panels > Connect Solar Panels
+Total energy of a material, including kinetic and potential energies of the molecules within the material.
 
-Connect Solar Panels >  Connect Auxiliary Power Sources > Install Solar Panels > Set Up Roof Attachments  > Power On > Connect Appliances to use
+Thermodynamics
+Absolute zero
+Internal energy
+First law of thermodynamics
+Adiabatic process
+Temperture inversion
+Second law of thermodynamics
+Heat engine
+Entropy
 
-3. What type of battery do Solarbatteries utilize?
-	
-	Lithium
-	AGM (Lead Acid)++
-	Fuel Cells
-	Alkaline
 
-4. What is the recommended use for a SolarBattery 1000?
-	
-	Whole House Energy Load
-	Lighting, Fans & TV, Fridge, A/C, etc…
-	Lighting, Fans & TV, Fridge
-	Lighting, Fans & TV++
+The study of heat.
 
-5.What is the recommended use for a SolarBattery 3000?
-	
-	Whole House Energy Load
-	Lighting, Fans & TV, Fridge, A/C, etc…
-	Lighting, Fans & TV, Fridge++
-	Lighting, Fans & TV
+Thermodynamics
+Absolute zero
+Internal energy
+First law of thermodynamics
+Adiabatic process
+Temperture inversion
+Second law of thermodynamics
+Heat engine
+Entropy
 
-6.What is the recommended use for a SolarBattery 5000?
-	
-	Whole House Energy Load
-	Lighting, Fans & TV, Fridge, A/C, etc…++
-	Lighting, Fans & TV, Fridge
-	Lighting, Fans & TV++
 
-7. How long can Solarbatteries sustain their recommended usage without sunlight power from PV?
-	
-	Forever
-	A couple hours
-	Refer back to spec sheet, but generally based on included structures, about 8 hours if no other auxiliary source is provided++
-	6 Hours
+The upper atmosphere becomes warmer than regions below it.
 
-8. Solarbatteries are easy to install, remove and replace by anyone with a little experience with electricity, thus they can be considered deployable and thus sent to regions in need of them.
+Thermodynamics
+Absolute zero
+Internal energy
+First law of thermodynamics
+Adiabatic process
+Temperture inversion
+Second law of thermodynamics
+Heat engine
+Entropy
 
-	True++
-	False 
+
+A process in which no heat leves or enters the system.
+
+Thermodynamics
+Absolute zero
+Internal energy
+First law of thermodynamics
+Adiabatic process
+Temperture inversion
+Second law of thermodynamics
+Heat engine
+Entropy
+
+
+Represents the amount of disorder in a system.
+
+Thermodynamics
+Absolute zero
+Internal energy
+First law of thermodynamics
+Adiabatic process
+Temperture inversion
+Second law of thermodynamics
+Heat engine
+Entropy
+
+
+A machine that converts heat input into work output.
+
+Thermodynamics
+Absolute zero
+Internal energy
+First law of thermodynamics
+Adiabatic process
+Temperture inversion
+Second law of thermodynamics
+Heat engine
+Entropy
+
+
+All systems tend to become more disordered with time. The amount of usable energy decreases with time and continuing operation of the system.
+
+Thermodynamics
+Absolute zero
+Internal energy
+First law of thermodynamics
+Adiabatic process
+Temperture inversion
+Second law of thermodynamics
+Heat engine
+Entropy

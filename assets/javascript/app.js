@@ -59,75 +59,97 @@ $(document).ready(function(){
 
   var nextQ = function(){
 
-    $('#message').empty();
-    $('#wins').empty();
-    $('#pics').empty();
-    $('#question').empty();
-    $('#choice1').empty();
-    $('#choice2').empty();
-    $('#choice3').empty();
-    $('#choice4').empty();
-    $('#losses').empty();
+    $("#message").empty();
+    $("#wins").empty();
+    $("#pics").empty();
+    $("#question").empty();
+    $("#losses").empty();
 
     answered = true;
 
-    index = Math.floor(Math.random()*9);
+    $('#current').html((current + 1) + "/" + questions.length);
+    $('.question').html('<h2>' + questions[current].q + '</h2>');
 
-    if (index <= (questions.length - 1)) {
-      timer();
-      
-      $('#question').text(questions[index].q);
-      $('#choice1').text(questions[index].choices[0]);
-      $('#choice2').text(questions[index].choices[1]);
-      $('#choice3').text(questions[index].choices[2]);
-      $('#choice4').text(questions[index].choices[3]);
-
-      $('.choices').click(function(){
-        userChoice = $(this);
-        score(userChoice, index)
-      })
-    }else{
-      $('#display').empty();
-      $('.choice').empty();
-      $('#question').append('Game Over!');
-      $('#wins').append('You answered correctly: ' + wins);
-      $('#losses').append('You missed: ' + losses);
-      $('#startOver').show();
+    for(var i=0; i<questions.length; i++){
+      var answers = $('<div>');
+      answers.text(questions[current].choices[i]);
+      answers.attr({'data-index': i});
+      answers.addClass('chosen');
+      $('.choiceList').append(answers);
     }
+
+    timer();
+
+    $('.chosen').click(function(){
+      userSelect = $(this).data('index');
+      clearInterval(time);
+      page();
+    });
   }
 
   var timer = function(){
-    var interval = 30;
-    setInterval(function(){
-      $('#display').text(interval)
-      interval--
-      if(interval === 0){
-        clearInterval(timer);
-        nextQ();
-        score();
+    sec = 30;
+    $('#timeToGo').html('<h3>Time Remaining: ' + sec + '</h3>');
+    answered = true;
+    time = setInterval(function(){
+      sec--
+      $('#timeToGo').html('<h3>Time Remaining: ' + sec + '</h3>');
+      if(sec === 0){
+        clearInterval(time);
+        answered = false;
+        page();
       }
     },1000);
   }
 
 
-  var score = function(userChoice,index){
-    timer();
+  var page = function(){
+    $('#current').empty();
+    $('.chosen').empty();
+    $('.question').empty();
 
-    $('#question').empty();
-    $('#choice1').empty();
-    $('#choice2').empty();
-    $('#choice3').empty();
-    $('#choice4').empty();
+    var correctChoiceIndex = questions[current].answer;
 
-    if(userChoice === questions[index].choices[questions[index].answer]){
-      wins++ 
-      alert('Correct!')
-      nextQ()
+    var correctChoice = questions[current].choices[correctChoiceIndex];
+
+    $('#pics').html('<img src = assets/images/' + imageArray[current] + "width = 600px>");
+
+    if((userSelect === correctChoiceIndex) && (answered === true)){
+      wins++;
+      $('#message').html(message.correct);
+    }else if((userSelect !== correctChoiceIndex) && (answered === true)){
+      losses++;
+      $('#message').html(message.incorrect);
+      $('#corrected').html('The answer is: ' + correctChoice);
     }else{
-      losses++
-      alert('Wrong!')
-      nextQ()
+      none++;
+      $("#message").html(message.end);
+      $("#corrected").html("The correct answer is: " + correctChoice);
+      answer = true;
     }
+
+    if(current ===(questions.length-1)){
+      setTimeout(score, 5000);
+    }else{
+      current++
+      setTimeout(nextQ, 5000);
+    }
+  }
+
+
+  var score = function(){
+    $('#timeToGo').empty();
+    $('#message').empty();
+    $('#corrected').empty();
+    $('#pics').empty();
+
+    $('#final').html(message.final)
+    $('#correct').html('Answered Correcly: ' + wins);
+    $('#incorrect').html('Missed: ' + losses);
+    $('#none').html('Unanswered: '+ none);
+    $('#startOver').addClass('reset');
+    $('#startOver').show();
+    $('#startOver').html('Try Again!');
   }
 
 })
