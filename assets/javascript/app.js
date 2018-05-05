@@ -12,7 +12,7 @@ var questions = [
 ];
 
 
-var imageArray = ["absolute.jpg", "engine.jpg", "entropy.jpg", "first.jpg", "internal.jpg", "inversion.jpg", "laws.png", "piston.jpg", "second.jpg", "thermo.jpg"];
+var imageArray = ["absolute.jpg", "first.jpg", "internal.jpg", "thermo.jpg", "inversion.jpg", "piston.jpg", "entropy.jpg", "engine.jpg", "second.jpg"];
 
 var current;
 var none;
@@ -35,13 +35,11 @@ $(document).ready(function(){
 
   $("#start").click(function(){
     $(this).hide();
-      game();
+    $("#corrected").empty();
+    $("#correct").empty();
+    $("#incorrect").empty();
+    game();
   })
-
-  $("#startOver").click(function(){
-    $(this).hide();
-      game();
-  });
 
   var game = function(){
     $('#final').empty();
@@ -66,6 +64,9 @@ $(document).ready(function(){
     $("#pics").empty();
     $("#question").empty();
     $("#losses").empty();
+    $("#corrected").empty();
+    $("#correct").empty();
+    $("#incorrect").empty();
 
     answered = true;
 
@@ -91,11 +92,11 @@ $(document).ready(function(){
 
   var timer = function(){
     sec = 30;
-    $('#timeToGo').html('<h3>Time Remaining: ' + sec + '</h3>');
+    $('#timeToGo').html('<h3>Time Remaining (s): ' + sec + '</h3>');
     answered = true;
     time = setInterval(function(){
       sec--
-      $('#timeToGo').html('<h3>Time Remaining: ' + sec + '</h3>');
+      $('#timeToGo').html('<h3>Time Remaining (s): ' + sec + '</h3>');
       if(sec === 0){
         clearInterval(time);
         answered = false;
@@ -149,9 +150,9 @@ $(document).ready(function(){
     $('#correct').html('Answered Correcly: ' + wins);
     $('#incorrect').html('Missed: ' + losses);
     $('#none').html('Unanswered: '+ none);
-    $('#startOver').addClass('reset');
-    $('#startOver').show();
-    $('#startOver').html('Try Again!');
+    $('#start').addClass('reset');
+    $('#start').show();
+    $('#start').html('Try Again!');
   }
 
 })
