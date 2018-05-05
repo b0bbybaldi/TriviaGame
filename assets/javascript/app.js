@@ -115,7 +115,7 @@ $(document).ready(function(){
 
     var correctChoice = questions[current].choices[correctChoiceIndex];
 
-    $('#pics').html('<img src= assets/images/' + imageArray[current] + " width=20%>");
+    $('#pics').html('<img src= assets/images/' + imageArray[current] + " width=30%>");
 
     if((userSelect === correctChoiceIndex) && (answered === true)){
       wins++;
