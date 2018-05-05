@@ -27,8 +27,8 @@ var index;
 var message = {
   correct: "Correct!",
   incorrect: "No, that's not it.",
-  end: "Ran out of time!",
-  finished: 'Game Over!'
+  end: "Out of time!",
+  final: 'Game Over!'
 }
 
 $(document).ready(function(){
@@ -114,7 +114,7 @@ $(document).ready(function(){
 
     var correctChoice = questions[current].choices[correctChoiceIndex];
 
-    $('#pics').html('<img src = assets/images/' + imageArray[current] + "width = 600px>");
+    $('#pics').html('<img src= assets/images/' + imageArray[current] + " width=20%>");
 
     if((userSelect === correctChoiceIndex) && (answered === true)){
       wins++;
